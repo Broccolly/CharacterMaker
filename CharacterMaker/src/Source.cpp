@@ -1,5 +1,6 @@
 #include "Character.h"
 #include "Menu.h"
+
 int main()
 {
 	Character character;
@@ -16,7 +17,7 @@ int main()
 		"Dragonborn",
 		"Halfling",
 		"Half-Orc",
-		"Tiefling",
+		"Tiefling"
 	};
 	Menu menu = Menu(races, "Choose a race:\n");
 	character.SetRace(menu.DisplayMenu());
