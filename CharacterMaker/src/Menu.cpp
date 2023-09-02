@@ -1,7 +1,7 @@
 #include "Menu.h"
 #include <conio.h>
 #include <vector>
-#include<algorithm>
+#include <algorithm>
 
 Menu::Menu() : m_Items{}
 {
@@ -56,7 +56,7 @@ std::string Menu::DisplayMenu(int page)
 			{
 				int inputInt;
 				inputInt = std::stoi(&input);
-				return m_Items[inputInt + 8 * page];
+				return m_Items[inputInt + 8 * page - 1];
 			}
 		}
 	}
