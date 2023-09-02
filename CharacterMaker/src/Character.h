@@ -16,11 +16,11 @@ public:
 	void SetStat(Stat stat, int val);
 	int GetStat(Stat stat);
 	std::string& GetName();
-	void SetName(std::string name);
+	void SetName(const std::string& name);
 	std::string& GetClas();
-	void SetClas(std::string clas);
+	void SetClas(const std::string& clas);
 	std::string& GetRace();
-	void SetRace(std::string race);
+	void SetRace(const std::string& race);
 
 	void PrintCharacter();
 };

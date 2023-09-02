@@ -33,7 +33,17 @@ void Character::PrintCharacter()
 		<< "INT: " << stats[INT] << std::endl;
 }
 
-void Character::SetRace(std::string race) 
+void Character::SetName(const std::string& name)
+{
+	m_Name = name;
+}
+
+void Character::SetRace(const std::string& race) 
 {
 	m_Race = race;
+}
+
+void Character::SetClas(const std::string& clas)
+{
+	m_Clas = clas;
 }

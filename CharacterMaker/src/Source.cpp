@@ -19,7 +19,28 @@ int main()
 		"Half-Orc",
 		"Tiefling"
 	};
-	Menu menu = Menu(races, "Choose a race:\n");
-	character.SetRace(menu.DisplayMenu());
+
+	std::vector<std::string> clases
+	{
+		"Fighter",
+		"Bard",
+		"Barbarian"
+	};
+
+	std::string name;
+
+	std::cout << "Name:" << std::endl;
+
+	std::cin >> name;
+
+	character.SetName(name);
+
+	Menu raceMenu = Menu(races, "Choose a race:\n");
+	
+	character.SetRace(raceMenu.DisplayMenu());
+	
+	Menu clasMenu = Menu(clases, "Choose a class:\n");
+
+	character.SetClas(clasMenu.DisplayMenu());
 	character.PrintCharacter();
 }
